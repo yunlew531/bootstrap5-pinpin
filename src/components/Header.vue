@@ -25,7 +25,7 @@ export default {
 
 <style lang="scss" scoped>
 .img-logo {
-  background: url(./src/assets/logo.jpg) no-repeat center;
+  background: url(@/assets/logo.jpg) no-repeat center;
   background-size: cover;
   width: 111px;
   height: 40px;

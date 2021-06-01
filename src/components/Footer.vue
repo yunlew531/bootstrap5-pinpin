@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <p class="text-center py-4 text-white bg-footer">Copyright &copy; 拼拼 All rights reserved.</p>
+    <p class="text-center py-4 mb-0 text-white bg-footer">Copyright &copy; 拼拼 All rights reserved.</p>
   </footer>
 </template>
 
