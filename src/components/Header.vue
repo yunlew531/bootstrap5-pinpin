@@ -3,14 +3,14 @@
     <div class="container d-flex align-items-center">
       <div class="d-flex align-items-center flex-grow-1">
         <a href="javascript:;" class="d-block img-logo"><h1 class="visually-hidden">拼拼</h1></a>
-        <ul class="d-flex list-unstyled align-items-center m-0">
+        <ul class="d-flex list-unstyled align-items-center m-0 md-hide">
           <li class="ms-5"><a href="javascript:;" class="m-font-color text-decoration-none">關於</a></li>
           <li class="ms-5"><a href="javascript:;" class="m-font-color text-decoration-none">挖寶</a></li>
           <li class="ms-5"><a href="javascript:;" class="m-font-color text-decoration-none">我有個大膽的想法</a></li>
         </ul>
       </div>
       <div class="">
-        <button type="button" class="btn m-bg-color m-bg-color rounded-pill btn-style">登入</button>
+        <button type="button" class="btn m-bg-yellow support-btn rounded-pill btn-style">登入</button>
         <button type="button" class="btn btn-outline-secondary rounded-pill ms-3 btn-style">註冊</button>
       </div>
     </div>
@@ -35,5 +35,10 @@ export default {
 }
 .border-bottom-style {
   border-color: #FFDF65 !important;
+}
+@media (max-width: 768px) {
+  .md-hide {
+    display: none !important;
+  }
 }
 </style>

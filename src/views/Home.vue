@@ -2,10 +2,10 @@
   <section class="py-5 product-panel">
     <div class="container">
       <span class="h8 bg-myGray px-3 py-1 rounded text-white fw-bold">魔法科技</span>
-      <h1 class="h2 lh-base mt-1 mb-4 bg-">拍出會動的照片｜LivePhotos 魔法拍立得</h1>
+      <h1 class="h2 lh-base mt-1 mb-4">拍出會動的照片｜LivePhotos 魔法拍立得</h1>
       <div class="row g-4">
-        <img src="@/assets/produt_image.jpg" class="col-7 product-img">
-        <div class="col-5">
+        <img src="@/assets/produt_image.jpg" class="col-md-7 product-img">
+        <div class="col-md-5">
           <span>目標 $600,000</span>
           <p class="h1">$280,047</p>
           <div class="progress rounded-pill">
@@ -32,11 +32,11 @@
             在 2021/06/14 23:59 募資結束前，您都可以贊助我們！</p>
           </div>
           <div class="mt-4">
-            <button type="button" class="btn btn-warning rounded-pill py-3 w-100"><span class="h5 fw-bold">贊助專案</span></button>
+            <button type="button" class="btn m-bg-yellow support-btn rounded-pill py-3 w-100"><span class="h5 fw-bold">贊助專案</span></button>
           </div>
           <div class="d-flex mt-2">
-            <button type="button" class="btn btn-outline-gary border-2 flex-grow-1 me-2 rounded-pill py-3"><span class="h5 fw-bold">追蹤專案</span></button>
-            <button type="button" class="btn btn-outline-gary border-2 flex-grow-1 rounded-pill py-3"><span class="h5 fw-bold">分享</span></button>
+            <button type="button" class="btn btn-outline-gary follow-btn border-2 flex-grow-1 me-2 rounded-pill py-3"><span class="h5 fw-bold">追蹤專案</span></button>
+            <button type="button" class="btn btn-outline-gary border-2 follow-btn flex-grow-1 rounded-pill py-3"><span class="h5 fw-bold">分享</span></button>
           </div>
         </div>
       </div>
@@ -62,7 +62,7 @@
   </section>
   <section class="py-5 container">
     <div class="row g-5">
-      <div class="col-8">
+      <div class="col-md-8">
         <div class="tab-content" id="pills-tabContent">
           <div class="tab-pane fade show active" id="pills-introduce" role="tabpanel" aria-labelledby="pills-home-tab">
             <img src="@/assets/p1.jpg" alt="">
@@ -102,27 +102,27 @@
                 <option value="">請選擇一個方案</option>
               </select>
             </label>
-            <button type="button" class="px-5 py-2 btn btn-warning rounded-pill mx-auto d-block mt-4"><span class="h4">贊助專案</span></button>
+            <button type="button" class="px-5 py-2 btn m-bg-yellow rounded-pill mx-auto d-block mt-4 support-btn"><span class="h4">贊助專案</span></button>
           </div>
           <div class="tab-pane fade" id="pills-schedule" role="tabpanel" aria-labelledby="pills-profile-tab">.schedule..</div>
           <div class="tab-pane fade" id="pills-quations" role="tabpanel" aria-labelledby="pills-profile-tab">.quations..</div>
           <div class="tab-pane fade" id="pills-message" role="tabpanel" aria-labelledby="pills-contact-tab">message...</div>
         </div>
       </div>
-      <div class="col-4">
-        <div class="border side-bar rounded-5 p-3">
-          <div class="d-flex">
-            <img src="@/assets/store_img.jpg" class="store-img">
-          </div>
-        </div>
+      <div class="col-md-4">
+        <SideBar />
       </div>
     </div>
   </section>
 </template>
 
 <script>
-export default {
+import SideBar from '@/components/SideBar.vue';
 
+export default {
+  components:{
+    SideBar,
+  },
 }
 </script>
 
@@ -159,9 +159,6 @@ $photographColor: #494846;
 }
 .nav-border {
   border-bottom: 2px solid $mainGray;
-}
-.side-bar {
-  border-color: $mainGray !important;
 }
 .store-img{
   width: 100px;
