@@ -1,0 +1,33 @@
+.logo {
+  height: 40px;
+}
+
+.progress {
+  background-color: #eeeeee;
+}
+.good-icon {
+  width: 25px;
+}
+
+.nav-link {
+  &.active {
+    border-bottom: solid 3px $primary !important; 
+  }
+}
+
+.store-img {
+  width: 100px;
+  height: 100px;
+  background: center no-repeat;
+  background-size: cover;
+  background-image: url(../images/store_img.jpg);
+}
+
+.youtube-icon, .facebook-icon {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  > i {
+    line-height: 30px;
+  }
+}
