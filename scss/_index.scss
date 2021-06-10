@@ -1,3 +1,7 @@
+body {
+  font-family: 'Noto Sans TC', sans-serif, 'Baloo Tamma 2', cursive;
+}
+
 .logo {
   height: 40px;
 }
@@ -11,7 +15,8 @@
 
 .nav-link {
   &.active {
-    border-bottom: solid 3px $primary !important; 
+    border-bottom: solid 3px $primary !important;
+    font-weight: bold; 
   }
 }
 
@@ -23,7 +28,7 @@
   background-image: url(../images/store_img.jpg);
 }
 
-.youtube-icon, .facebook-icon {
+.custom-icon {
   width: 30px;
   height: 30px;
   text-align: center;
@@ -56,6 +61,7 @@
 .hover\:btn-orange-1 {
   &:hover {
     background-color: $orange-1;
+    color: white !important;
     > span {
       color: white !important;
     }
@@ -66,8 +72,22 @@
   &:hover {
     background-color: $primary;
     border-color: $primary;
-    > i {
+    > .fa-heart {
       color: $orange-1;
     }
+  }
+}
+
+.accordion-item {
+  border: 1px solid $gray-5 !important;
+  border-radius: 8px !important;
+}
+
+.accordion-button {
+  border-radius: 8px !important;
+  &:not(.collapsed) {
+  border-radius: 8px 8px 0 0 !important;
+  background-color: white;
+    color: $gray-1;
   }
 }
