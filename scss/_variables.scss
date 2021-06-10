@@ -84,6 +84,9 @@ $gray-2: #636057;
 $gray-3: #858377;
 $gray-4: #373A3C;
 $gray-5: #E5E5E5;
+$gray-6: #F7F7F7;
+$gray-7: #999999;
+$gray-8: #E8E8DB;
 $orange-1: #FF785E;
 $white-1: #F8F9FA;
 
@@ -103,6 +106,9 @@ $theme-colors: (
   "gray-3":     $gray-3,
   "gray-4":     $gray-4,
   "gray-5":     $gray-5,
+  "gray-6":     $gray-6,
+  "gray-7":     $gray-7,
+  "gray-":     $gray-8,
   "orange-1":   $orange-1,
   "white-1":    $white-1,
 ) !default;
@@ -476,6 +482,7 @@ $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              1.75 !default;
+$line-height-xl:               2 !default;
 
 $h1-font-size:                $font-size-base * 2 !default;
 $h2-font-size:                $font-size-base * 1.5 !default;
@@ -700,7 +707,7 @@ $form-text-margin-top:                  .25rem !default;
 $form-text-font-size:                   $small-font-size !default;
 $form-text-font-style:                  null !default;
 $form-text-font-weight:                 null !default;
-$form-text-color:                       $text-muted !default;
+$form-text-color:                       $gray-7 !default;
 // scss-docs-end form-text-variables
 
 // scss-docs-start form-label-variables

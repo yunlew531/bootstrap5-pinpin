@@ -31,3 +31,43 @@
     line-height: 30px;
   }
 }
+
+.triangle-style {
+  position: relative;
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    transform: translateX(-50%) translateY(-50%);
+    height: 6px;
+    width: 8px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: $gray-4;
+  }
+  &::before {
+    bottom: 18px;
+  }
+  &::after {
+    bottom: 8px;
+    transform: translateX(-50%) translateY(-50%) rotate(180deg);
+  }
+}
+
+.hover\:btn-orange-1 {
+  &:hover {
+    background-color: $orange-1;
+    > span {
+      color: white !important;
+    }
+  }
+}
+
+.hover\:btn-primary {
+  &:hover {
+    background-color: $primary;
+    border-color: $primary;
+    > i {
+      color: $orange-1;
+    }
+  }
+}
