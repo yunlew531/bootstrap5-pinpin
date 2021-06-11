@@ -102,4 +102,6 @@ function validateSubmitOrder() {
 
 function resetLoginForm() {
   loginForm.reset();
+  submitTelInput.classList.remove('is-valid');
+  submitTelInput.classList.remove('is-invalid');
 }
