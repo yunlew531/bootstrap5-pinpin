@@ -32,7 +32,7 @@
             </li>
           </ul>
           <div class="d-flex">
-            <button type="btn btn-primary"
+            <button type="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login-modal"
               class="btn btn-primary hover:btn-orange-1 rounded-pill px-8 py-2 text-gray-2">登入
             </button>
             <button type="btn btn-primary"
@@ -356,33 +356,49 @@
             <form class="form">
               <div class="mb-4 triangle-style">
                 <label for="project" class="form-label">贊助方案</label>
-                <select name="project" id="project" class="form-control text-gray-7 bg-gray-6 w-100 border-0 rounded py-2 px-4">
+                <select data-validate="order-submit" name="project" id="project" class="form-control text-gray-7 bg-gray-6 w-100 rounded py-2 px-4">
                   <option value="">請選擇一個方案</option>
                   <option value="方案一">方案一</option>
                   <option value="方案二">方案二</option>
                 </select>
+                <div class="invalid-feedback">
+                  請選擇一個方案!
+                </div>
               </div>
               <div class="mb-4">
                 <label for="name" class="form-label">收件人姓名</label>
-                <input type="text" class=" form-control text-gray-7 bg-gray-6 w-100 border-0 rounded py-2 px-4" id="name">
+                <input data-validate="order-submit" type="text" class=" form-control text-gray-7 bg-gray-6 w-100 rounded py-2 px-4" id="name">
+                <div class="invalid-feedback">
+                  姓名為必填!
+                </div>
               </div>
               <div class="mb-4">
-                <label class="form-label" for="tel">聯絡電話</label>
-                <input type="tel" class="form-control text-gray-7 bg-gray-6 w-100 border-0 rounded py-2 px-4" id="tel">
+                <label class="form-label" for="submit-tel">聯絡電話</label>
+                <input type="number" class="form-control text-gray-7 bg-gray-6 w-100 rounded py-2 px-4" id="submit-tel">
+                <div class="invalid-feedback">
+                  請填入正確號碼!
+                </div>
               </div>
               <div class="mb-4">
-                <label class="form-label" for="email">連絡信箱</label>
-                <input type="email" class="form-control text-gray-7 bg-gray-6 w-100 border-0 rounded py-2 px-4" id="email">
+                <label class="form-label" for="submit-email">連絡信箱</label>
+                <input type="email" class="form-control text-gray-7 bg-gray-6 w-100 rounded py-2 px-4" id="submit-email">
+                <div class="invalid-feedback">
+                  請填入正確信箱!
+                </div>
               </div>
               <div class="mb-6 triangle-style">
                 <label for="payment" class="form-label">付款方式</label>
-                <select name="project" id="payment" class="form-control text-gray-7 bg-gray-6 w-100 border-0 rounded py-2 px-4">
+                <select data-validate="order-submit" name="project" id="payment" class="form-control text-gray-7 bg-gray-6 w-100 rounded py-2 px-4">
+                  <option value="">選擇付款方式</option>
                   <option value="信用卡付款">信用卡付款</option>
                   <option value="超商取貨付款">超商取貨付款</option>
                 </select>
+                <div class="invalid-feedback">
+                  請選擇付款方式!
+                </div>
               </div>
               <div class="text-center mb-4 mb-md-0">
-                <button type="submit" class="lh-1 border-0 btn btn-primary hover:btn-orange-1 py-4 px-12 rounded-pill">
+                <button id="order-submit-btn" type="submit" class="lh-1 border-0 btn btn-primary hover:btn-orange-1 py-4 px-12 rounded-pill">
                   <span class="h3 text-gray-2 m-0 lh-1">贊助專案</span>
                 </button>
               </div>
@@ -480,6 +496,47 @@
         </div>
       </div>
     </section>
+    <!-- 登入Modal -->
+    <div class="login-modal modal fade" id="login-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title h2 text-gray-4">登入</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="login-form">
+              <div class="mb-3">
+                <label for="login-email" class="form-label">帳號</label>
+                <input data-validate="login" type="email" class="form-control bg-gray-6" id="login-email">
+                <div class="invalid-feedback">
+                  請填寫正確的信箱!
+                </div>  
+              </div>
+              <div class="mb-3">
+                <label for="login-password" class="form-label">密碼</label>
+                <input data-validate="login" type="password" class="form-control bg-gray-6" id="login-password">
+                <div class="invalid-feedback">
+                  請檢查密碼!
+                </div>
+              </div>
+              <a href="#" class="h5 text-gray-3 text-decoration-none">忘記密碼？</a>
+              <button id="login" type="submit" class="btn btn-primary rounded-pill w-100 py-4 mt-4">
+                <span class="h3 text-gray-2">登入</span>
+              </button>
+            </form>
+            <div class="position-relative pb-8">
+              <div class="progress mt-14">
+                <div class="progress-bar bg-gray-8" role="progressbar" style="width: 100%"></div>
+              </div>
+              <p class="h5 bg-white text-nowrap position-absolute start-50 top-25 translate-middle px-3 m-0">還沒有帳號？ 
+                <a href="#" class="text-orange-1 text-decoration-none">註冊一個帳號</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <!-- footer -->
   <footer class="text-center py-8 bg-gray-1">
@@ -490,11 +547,6 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
   <script src="./js/bootstrap.js"></script>
-  <script>
-    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-      return new bootstrap.Tooltip(tooltipTriggerEl)
-    });
-  </script>
+  <script src="./js/main.js"></script>
 </body>
 </html>

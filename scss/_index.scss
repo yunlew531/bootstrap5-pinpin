@@ -146,6 +146,12 @@ body {
   }
 }
 
+.login-modal {
+  .progress {
+    height: 1px;
+  }
+}
+
 .hover\:btn-orange-1 {
   &:hover {
     background-color: $orange-1;
