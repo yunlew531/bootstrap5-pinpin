@@ -8,6 +8,7 @@ let orderSubmitInputs = document.querySelectorAll('[data-validate="order-submit"
 orderSubmitInputs = [ ...orderSubmitInputs ];
 const submitEmailInput = document.querySelector('#submit-email');
 const submitTelInput = document.querySelector('#submit-tel');
+const sponsorBtn = document.querySelector('.sponsor-btn');
 
 
 const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
@@ -18,7 +19,15 @@ const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 loginModal.addEventListener('hidden.bs.modal', resetLoginForm);
 loginBtn.addEventListener('click', login);
 orderSubmitBtn.addEventListener('click', submitOrder);
+window.addEventListener('scroll', hideSponsorBtn);
 
+function hideSponsorBtn() {
+  if (window.scrollY >= 2100 && window.scrollY <=3050) {
+    sponsorBtn.classList.add('opacity-0');
+  } else {
+    sponsorBtn.classList.remove('opacity-0');
+  }
+}
 
 function login(e) {
   e.preventDefault();
@@ -62,7 +71,7 @@ function submitOrder(e) {
   console.log('送出請求...');
   setTimeout(() => {
     orderSubmitBtn.classList.remove('disabled');
-    alert('登入失敗!');
+    alert('成功送出!');
   }, 2000);
 }
 

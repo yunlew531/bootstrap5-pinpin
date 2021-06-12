@@ -8,9 +8,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
+  <!-- <link rel="stylesheet" href="./css/main.final.css"> -->
   <title>拼拼</title>
 </head>
 <body>
+  <!-- mobile fixed button -->
+  <a href="#order-form" class="sponsor-btn btn btn-primary hover-btn-orange-100 w-100 z-10 py-3 position-fixed bottom-0">
+    贊助專案
+  </a>
+  <!-- mobile fixed button -->
   <!-- header -->
   <header class="header border-bottom border-5 border-primary">
     <div class="container">
@@ -22,21 +28,21 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item ms-12">
-              <a href="#" class="nav-link text-decoration-none text-gray-2">關於</a>
+              <a href="#" class="nav-link text-decoration-none text-gray-600">關於</a>
             </li>
             <li class="nav-item ms-12">
-              <a href="#" class="nav-link text-decoration-none text-gray-2">挖寶</a>
+              <a href="#" class="nav-link text-decoration-none text-gray-600">挖寶</a>
             </li>
             <li class="nav-item ms-12">
-              <a href="#" class="nav-link text-decoration-none text-gray-2">我有個大膽的想法</a>
+              <a href="#" class="nav-link text-decoration-none text-gray-600">我有個大膽的想法</a>
             </li>
           </ul>
           <div class="d-flex">
             <button type="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login-modal"
-              class="btn btn-primary hover:btn-orange-1 rounded-pill px-8 py-2 text-gray-2">登入
+              class="btn btn-primary hover-btn-orange-100 rounded-pill px-8 py-2 text-gray-600">登入
             </button>
             <button type="btn btn-primary"
-              class="btn btn-outline-gray-3 hover:btn-primary border-2 rounded-pill px-8 py-2 ms-4 text-gray-2">註冊
+              class="btn btn-outline-gray-500 hover-btn-primary border-2 rounded-pill px-8 py-2 ms-4 text-gray-600">註冊
             </button>
           </div>
         </div>
@@ -45,65 +51,65 @@
   </header>
   <main class="border-top border-5 border-primary">
     <!-- 主商品 -->
-    <section class="product-panel bg-white-1 pt-4 pt-md-12 pb-16">
+    <section class="product-panel bg-white-100 pt-4 pt-md-12 pb-16">
       <div class="container">
-        <span class="h6 text-white bg-gray-3 rounded px-4 py-1">魔法科技</span>
-        <h1 class="h1 text-gray-1 lh-base tracking-3 mt-1 mb-6">拍出會動的照片｜LivePhotos 魔法拍立得</h1>
+        <span class="h6 text-white bg-gray-500 rounded px-4 py-1">魔法科技</span>
+        <h1 class="h1 text-gray-700 lh-base tracking-3 mt-1 mb-6">拍出會動的照片｜LivePhotos 魔法拍立得</h1>
         <div class="row">
           <img class="col-md-7" src="./images/produt_image.jpg" alt="拍出會動的照片｜LivePhotos 魔法拍立得">
           <div class="col-md-5 pt-4 pt-md-0">
-            <span class="h5 text-gray-2 ">目標 $600,000</span>
-            <span class="h1 text-gray-1 d-block lh-lg">$280,047</span>
+            <span class="h5 text-gray-600 ">目標 $600,000</span>
+            <span class="h1 text-gray-700 d-block lh-lg">$280,047</span>
             <div class="progress rounded-pill">
-              <div class="progress-bar bg-primary text-gray-3" role="progressbar" style="width: 41%;" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100">41%</div>
+              <div class="progress-bar bg-primary text-gray-500" role="progressbar" style="width: 41%;" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100">41%</div>
             </div>
             <div class="d-flex pt-5">
               <div class="w-50">
-                <p class="h5 text-gray-2">贊助人數</p>
-                <span class="h1 text-gray-1 lh-lg">1374 人</span>
+                <p class="h5 text-gray-600">贊助人數</p>
+                <span class="h1 text-gray-700 lh-lg">1374 人</span>
               </div>
               <div class="w-50">
-                <p class="h5 text-gray-2">募資倒數</p>
-                <span class="h1 text-gray-1 lh-lg">27 天</span>
+                <p class="h5 text-gray-600">募資倒數</p>
+                <span class="h1 text-gray-700 lh-lg">27 天</span>
               </div>
             </div>
             <ul class="d-flex align-items-center p-0 mt-2">
               <li>
-                <button type="button" class="border-0 bg-white-1 p-0" data-bs-toggle="tooltip" data-bs-placement="top" title="認證標章">
+                <button type="button" class="border-0 bg-white-100 p-0" data-bs-toggle="tooltip" data-bs-placement="top" title="認證標章">
                   <img src="./images/icon_good01.svg" alt="icon" class="good-icon">
                 </button>
               </li>
               <li class="ms-6">
-                <button type="button" class="border-0 bg-white-1 p-0" data-bs-toggle="tooltip" data-bs-placement="top" title="品質保證">
+                <button type="button" class="border-0 bg-white-100 p-0" data-bs-toggle="tooltip" data-bs-placement="top" title="品質保證">
                   <img src="./images/icon_good02.svg" alt="icon" class="good-icon">
                 </button>
               </li>
               <li class="ms-6">
-                <button type="button" class="border-0 bg-white-1 p-0" data-bs-toggle="tooltip" data-bs-placement="top" title="原生創意">
+                <button type="button" class="border-0 bg-white-100 p-0" data-bs-toggle="tooltip" data-bs-placement="top" title="原生創意">
                   <img src="./images/icon_good03.svg" alt="icon" class="good-icon">
                 </button>
               </li>
               <li class="ms-6">
-                <button type="button" class="border-0 bg-white-1 p-0" data-bs-toggle="tooltip" data-bs-placement="top" title="人氣王">
+                <button type="button" class="border-0 bg-white-100 p-0" data-bs-toggle="tooltip" data-bs-placement="top" title="人氣王">
                   <img src="./images/icon_good04.svg" alt="icon" class="good-icon">
                 </button>
               </li>
             </ul>
-            <p class="text-gray-2 bg-white rounded-3 overflow-hidden mb-6">
+            <p class="text-gray-600 bg-white rounded-3 overflow-hidden mb-6">
               <span class="border-start border-primary border-3 d-block p-4">
                 專案募資中！<br>
                 在 2021/06/14 23:59 募資結束前，您都可以贊助我們！
               </span>
             </p>
-            <button class="btn btn-primary hover:btn-orange-1 rounded-pill w-100 py-3">
-              <span class="h3 text-gray-2">贊助專案</span>
+            <button class="btn btn-primary hover-btn-orange-100 rounded-pill w-100 py-3">
+              <span class="h3 text-gray-600">贊助專案</span>
             </button>
             <div class="d-flex mt-2">
-              <button class="btn btn-outline-gray-3 hover:btn-primary rounded-pill flex-grow-1 border-2 py-3">
+              <button class="btn btn-outline-gray-500 hover-btn-primary rounded-pill flex-grow-1 border-2 py-3">
                 <i class="h3 fas fa-heart m-0"></i>
                 <span class="h3 m-0">追蹤專案</span>
               </button>
-              <button class="btn btn-outline-gray-3 hover:btn-primary rounded-pill flex-grow-1 border-2 py-3 ms-2">
+              <button class="btn btn-outline-gray-500 hover-btn-primary rounded-pill flex-grow-1 border-2 py-3 ms-2">
                 <i class="h3 fas fa-share-alt m-0"></i>
                 <span class="h3 m-0">分享</span>
               </button>
@@ -154,104 +160,104 @@
             <!-- 專案介紹 -->
             <div class="tab-pane fade show active" id="nav-project" role="tabpanel">
               <img src="./images/p1.jpg" alt="LivePhotos 魔法拍立得">
-              <h3 class="h2 text-gray-1 border-start border-4 border-primary py-2 px-3 mt-6">
+              <h3 class="h2 text-gray-700 border-start border-4 border-primary py-2 px-3 mt-6">
                 施了魔法的照片
               </h3>
-              <p class="text-gray-1 lh-xl mb-6">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女，外成認心香吸工並知日成展源大超時動為生葉衣致長山對精做英密差家他微熱建取示濟定心一，品定把別銀動，深青輪一物加，生明果。西業白老如天有表非民大條全那遊，李文遊、像香過元學須本致信校態麼資司媽人價在它，地他不我計孩廠然不大指勢生的華常簡岸然，人著母病石金萬得一果。</p>
+              <p class="text-gray-700 lh-xl mb-6">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女，外成認心香吸工並知日成展源大超時動為生葉衣致長山對精做英密差家他微熱建取示濟定心一，品定把別銀動，深青輪一物加，生明果。西業白老如天有表非民大條全那遊，李文遊、像香過元學須本致信校態麼資司媽人價在它，地他不我計孩廠然不大指勢生的華常簡岸然，人著母病石金萬得一果。</p>
               <img src="./images/p2.jpg" alt="LivePhotos 魔法拍立得">
-              <h3 class="h2 text-gray-1 tracking-2 border-start border-4 border-primary py-2 px-3 mt-6">
+              <h3 class="h2 text-gray-700 tracking-2 border-start border-4 border-primary py-2 px-3 mt-6">
                 留下當下的美好
               </h3>
-              <p class="text-gray-1 lh-xl mb-0">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女，外成認心香吸工並知日成展源大超時動為生葉衣致長山對精做英密差家他微熱建取示濟定心一，品定把別銀動，深青輪一物加，生明果。西業白老如天有表非民大條全那遊，李文遊、像香過元學須本致信校態麼資司媽人價在它，地他不我計孩廠然不大指勢生的華常簡岸然，人著母病石金萬得一果。</p>
+              <p class="text-gray-700 lh-xl mb-0">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女，外成認心香吸工並知日成展源大超時動為生葉衣致長山對精做英密差家他微熱建取示濟定心一，品定把別銀動，深青輪一物加，生明果。西業白老如天有表非民大條全那遊，李文遊、像香過元學須本致信校態麼資司媽人價在它，地他不我計孩廠然不大指勢生的華常簡岸然，人著母病石金萬得一果。</p>
             </div>
             <!-- 常見問答 -->
             <div class="nav-questions tab-pane fade" id="nav-questions" role="tabpanel">
               <ul class="accordion accordion-flush p-0 mb-0" id="accordionFlushExample">
-                <li class="accordion-item mb-4">
+                <li class="accordion-item rounded-3 mb-4">
                   <h3 class="accordion-header" id="flush-headingOne">
                     <button class="px-4 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-questions-1" aria-expanded="false" aria-controls="flush-collapseOne">
-                      <span class="h4 md-h5 text-gray-1 tracking-1 m-0">
-                        <span class="text-gray-2 bg-primary rounded p-1 me-4">Q1</span>
+                      <span class="h4 md-h5 text-gray-700 tracking-1 m-0">
+                        <span class="text-gray-600 bg-primary rounded p-1 me-4">Q1</span>
                         影片拍完之後可以編輯嗎？</span>
                     </button>
                   </h3>
                   <div id="flush-questions-1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body p-4 ps-md-16">
-                      <p class="h4 md-h5 text-gray-3 tracking-1 lh-xl">可以進行簡易的編輯，內建 5 種濾鏡，影片秒數有3秒、5秒、10秒可以選擇，拍完的當下可以編輯要印出來的影片範圍哦！</p>
+                      <p class="h4 md-h5 text-gray-500 tracking-1 lh-xl">可以進行簡易的編輯，內建 5 種濾鏡，影片秒數有3秒、5秒、10秒可以選擇，拍完的當下可以編輯要印出來的影片範圍哦！</p>
                     </div>
                   </div>
                 </li>
-                <li class="accordion-item mb-4">
+                <li class="accordion-item rounded-3 mb-4">
                   <h3 class="accordion-header" id="flush-headingOne">
                     <button class="px-4 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-questions-2" aria-expanded="false" aria-controls="flush-collapseOne">
-                      <span class="h4 md-h5 text-gray-1 tracking-1 m-0">
-                        <span class="text-gray-2 bg-primary rounded p-1 me-4">Q2</span>
+                      <span class="h4 md-h5 text-gray-700 tracking-1 m-0">
+                        <span class="text-gray-600 bg-primary rounded p-1 me-4">Q2</span>
                         有提供保固或維修服務嗎？</span>
                     </button>
                   </h3>
                   <div id="flush-questions-2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body p-4 ps-md-16">
-                      <p class="h4 md-h5 text-gray-3 tracking-1 lh-xl">提供產品售後服務，對產品本體(不含配件、線材)提供二年保固服務。產品因意外或人為不當使用或未經授權維修等非依使用手冊使用而造成產品損壞者，則不在保固範圍之內，得向客戶酌收產品維修服務費用。
+                      <p class="h4 md-h5 text-gray-500 tracking-1 lh-xl">提供產品售後服務，對產品本體(不含配件、線材)提供二年保固服務。產品因意外或人為不當使用或未經授權維修等非依使用手冊使用而造成產品損壞者，則不在保固範圍之內，得向客戶酌收產品維修服務費用。
                       </p>
                     </div>
                   </div>
                 </li>
-                <li class="accordion-item mb-4">
+                <li class="accordion-item rounded-3 mb-4">
                   <h3 class="accordion-header" id="flush-headingOne">
                     <button class="px-4 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-questions-3" aria-expanded="false" aria-controls="flush-collapseOne">
-                      <span class="h4 md-h5 text-gray-1 tracking-1 m-0">
-                        <span class="text-gray-2 bg-primary rounded p-1 me-4">Q3</span>
+                      <span class="h4 md-h5 text-gray-700 tracking-1 m-0">
+                        <span class="text-gray-600 bg-primary rounded p-1 me-4">Q3</span>
                         補充包底片要去哪裡購買呢？</span>
                     </button>
                   </h3>
                   <div id="flush-questions-3" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body p-4 ps-md-16">
-                      <p class="h4 md-h5 text-gray-3 tracking-1 lh-xl">本產品可以兼容 i-type 及 600 相片，各大網路平台皆有販售。
+                      <p class="h4 md-h5 text-gray-500 tracking-1 lh-xl">本產品可以兼容 i-type 及 600 相片，各大網路平台皆有販售。
                       </p>
                     </div>
                   </div>
                 </li>
-                <li class="accordion-item mb-4">
+                <li class="accordion-item rounded-3 mb-4">
                   <h3 class="accordion-header" id="flush-headingOne">
                     <button class="px-4 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-questions-4" aria-expanded="false" aria-controls="flush-collapseOne">
-                      <span class="h4 md-h5 text-gray-1 tracking-1 m-0">
-                        <span class="text-gray-2 bg-primary rounded p-1 me-4">Q4</span>
+                      <span class="h4 md-h5 text-gray-700 tracking-1 m-0">
+                        <span class="text-gray-600 bg-primary rounded p-1 me-4">Q4</span>
                         印出來的拍立得照片需要充電嗎？</span>
                     </button>
                   </h3>
                   <div id="flush-questions-4" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body p-4 ps-md-16">
-                      <p class="h4 md-h5 text-gray-3 tracking-1 lh-xl">不用，取出後稍微搖晃，相片與空氣接觸數秒後便會產生圖像顏色。
+                      <p class="h4 md-h5 text-gray-500 tracking-1 lh-xl">不用，取出後稍微搖晃，相片與空氣接觸數秒後便會產生圖像顏色。
                       </p>
                     </div>
                   </div>
                 </li>
-                <li class="accordion-item mb-4">
+                <li class="accordion-item rounded-3 mb-4">
                   <h3 class="accordion-header" id="flush-headingOne">
                     <button class="px-4 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-questions-5" aria-expanded="false" aria-controls="flush-collapseOne">
-                      <span class="h4 md-h5 text-gray-1 tracking-1 m-0">
-                        <span class="text-gray-2 bg-primary rounded p-1 me-4">Q5</span>
+                      <span class="h4 md-h5 text-gray-700 tracking-1 m-0">
+                        <span class="text-gray-600 bg-primary rounded p-1 me-4">Q5</span>
                         運送方式及付款方式有哪些呢？</span>
                     </button>
                   </h3>
                   <div id="flush-questions-5" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body p-4 ps-md-16">
-                      <p class="h4 md-h5 text-gray-3 tracking-1 lh-xl">可以選擇超商取貨及宅配，付款方式有銀行轉帳及信用卡支付。
+                      <p class="h4 md-h5 text-gray-500 tracking-1 lh-xl">可以選擇超商取貨及宅配，付款方式有銀行轉帳及信用卡支付。
                       </p>
                     </div>
                   </div>
                 </li>
-                <li class="accordion-item mb-4">
+                <li class="accordion-item rounded-3 mb-4">
                   <h3 class="accordion-header" id="flush-headingOne">
                     <button class="px-4 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-questions-6" aria-expanded="false" aria-controls="flush-collapseOne">
-                      <span class="h4 md-h5 text-gray-1 tracking-1 m-0">
-                        <span class="text-gray-2 bg-primary rounded p-1 me-4">Q6</span>
+                      <span class="h4 md-h5 text-gray-700 tracking-1 m-0">
+                        <span class="text-gray-600 bg-primary rounded p-1 me-4">Q6</span>
                         退換貨方式及規則</span>
                     </button>
                   </h3>
                   <div id="flush-questions-6" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body p-4 ps-md-16">
-                      <p class="h4 md-h5 text-gray-3 tracking-1 lh-xl">因商品封條多為一次性包裝，商品退貨時必須回復原狀，亦即必須回復至您收到商品時的原始狀態，且會視回收的商品狀態另外酌收額外的整新費用，請您務必確認有購買需求後再行拆封，感謝您的配合。
+                      <p class="h4 md-h5 text-gray-500 tracking-1 lh-xl">因商品封條多為一次性包裝，商品退貨時必須回復原狀，亦即必須回復至您收到商品時的原始狀態，且會視回收的商品狀態另外酌收額外的整新費用，請您務必確認有購買需求後再行拆封，感謝您的配合。
                       </p>
                     </div>
                   </div>
@@ -261,102 +267,102 @@
             <!-- 目前進度 -->
             <div class="tab-pane fade" id="nav-progress" role="tabpanel">
               <ul class="now-progress p-0 mb-0">
-                <li class="d-flex border border-gray-5 rounded mb-4">
+                <li class="d-flex border border-gray-200 rounded mb-4">
                   <img src="./images/news01.jpg" class="img-mobile img-fluid" alt="news">
                   <div class="p-4">
-                    <h3 class="text-gray-1 tracking-1 mb-1">高雄體驗會｜免費參加送帆布袋</h3>
-                    <span class="h5 text-gray-3 d-block m-0">2021-6-20</span>
-                    <p class="progress-paragraph d-none h5 text-gray-3 tracking-1 lh-base m-0 py-4">大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！</p>
-                    <a href="#" class="h5 text-orange-1 text-decoration-none">MORE</a>
+                    <h3 class="text-gray-700 tracking-1 mb-1">高雄體驗會｜免費參加送帆布袋</h3>
+                    <span class="h5 text-gray-500 d-block m-0">2021-6-20</span>
+                    <p class="progress-paragraph d-none h5 text-gray-500 tracking-1 lh-base m-0 py-4">大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！</p>
+                    <a href="#" class="h5 text-orange-100 text-decoration-none">MORE</a>
                   </div>
                 </li>
-                <li class="d-flex border border-gray-5 rounded mb-4">
+                <li class="d-flex border border-gray-200 rounded mb-4">
                   <img src="./images/news02.jpg" class="img-mobile img-fluid" alt="news">
                   <div class="p-4">
-                    <h3 class="text-gray-1 tracking-1 mb-1">高雄體驗會｜免費參加送帆布袋</h3>
-                    <span class="h5 text-gray-3 d-block m-0">2021-6-20</span>
-                    <p class="progress-paragraph d-none h5 text-gray-3 tracking-1 lh-base m-0 py-4">大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！</p>
-                    <a href="#" class="h5 text-orange-1 text-decoration-none">MORE</a>
+                    <h3 class="text-gray-700 tracking-1 mb-1">高雄體驗會｜免費參加送帆布袋</h3>
+                    <span class="h5 text-gray-500 d-block m-0">2021-6-20</span>
+                    <p class="progress-paragraph d-none h5 text-gray-500 tracking-1 lh-base m-0 py-4">大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！</p>
+                    <a href="#" class="h5 text-orange-100 text-decoration-none">MORE</a>
                   </div>
                 </li>
-                <li class="d-flex border border-gray-5 rounded mb-4">
+                <li class="d-flex border border-gray-200 rounded mb-4">
                   <img src="./images/news03.jpg" class="img-mobile img-fluid" alt="news">
                   <div class="p-4">
-                    <h3 class="text-gray-1 tracking-1 mb-1">高雄體驗會｜免費參加送帆布袋</h3>
-                    <span class="h5 text-gray-3 d-block m-0">2021-6-20</span>
-                    <p class="progress-paragraph d-none h5 text-gray-3 tracking-1 lh-base m-0 py-4">大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！</p>
-                    <a href="#" class="h5 text-orange-1 text-decoration-none">MORE</a>
+                    <h3 class="text-gray-700 tracking-1 mb-1">高雄體驗會｜免費參加送帆布袋</h3>
+                    <span class="h5 text-gray-500 d-block m-0">2021-6-20</span>
+                    <p class="progress-paragraph d-none h5 text-gray-500 tracking-1 lh-base m-0 py-4">大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！</p>
+                    <a href="#" class="h5 text-orange-100 text-decoration-none">MORE</a>
                   </div>
                 </li>
               </ul>
             </div>
             <!-- 留言 -->
             <div class="nav-message tab-pane fade" id="nav-message" role="tabpanel">
-              <p class="h5 text-gray-1 rounded overflow-hidden bg-white2 mb-8">
+              <p class="h5 text-gray-700 rounded overflow-hidden bg-white2 mb-8">
                 <span class="p-4 d-block border-start border-4 border-primary">
                   只有本專案的贊助者才可以留言哦，如果有任何專案相關的問題，歡迎
-                  <span class="text-orange-1">聯絡提案人</span>！
+                  <span class="text-orange-100">聯絡提案人</span>！
                 </span>
               </p>
               <ul class="p-0 mb-0">
-                <li class="message-item border border-gray-5 rounded-3 p-4 mb-4">
+                <li class="message-item border border-gray-200 rounded-3 p-4 mb-4">
                   <div class="d-flex align-items-center pb-4">
                     <img src="./images/user_img01.jpg" alt="廖小杰">
                     <div class="ps-4">
-                      <p class="h3 text-gray-1 tracking-2">廖小杰</p>
-                      <p class="h5 text-gray-3 tracking-2 m-0">2020年5月22日 11:32</p>
+                      <p class="h3 text-gray-700 tracking-2">廖小杰</p>
+                      <p class="h5 text-gray-500 tracking-2 m-0">2020年5月22日 11:32</p>
                     </div>
                   </div>
-                  <p class="text-gray-4 tracking-1">晚上起床上廁所看到照片裡的人一直動其實有點恐怖，希望可以有暫停或是定時的功能！</p>
-                  <div class="bg-white-1 rounded p-4">
-                    <p class="h5 text-orange-1">提案者回覆</p>
-                    <p class="text-gray-4 tracking-1">你要嘛起床的時候開燈，要嘛給我們更多錢開發阿</p>
+                  <p class="text-gray-800 tracking-1">晚上起床上廁所看到照片裡的人一直動其實有點恐怖，希望可以有暫停或是定時的功能！</p>
+                  <div class="bg-white-100 rounded p-4">
+                    <p class="h5 text-orange-100">提案者回覆</p>
+                    <p class="text-gray-800 tracking-1">你要嘛起床的時候開燈，要嘛給我們更多錢開發阿</p>
                   </div>
                 </li>
-                <li class="border border-gray-5 rounded-3 p-4 mb-4">
+                <li class="border border-gray-200 rounded-3 p-4 mb-4">
                   <div class="d-flex align-items-center pb-4">
                     <img src="./images/user_img02.jpg" alt="卡阿伯">
                     <div class="ps-4">
-                      <p class="h3 text-gray-1 tracking-2">卡阿伯</p>
-                      <p class="h5 text-gray-3 tracking-2 m-0">2020年5月22日 11:32</p>
+                      <p class="h3 text-gray-700 tracking-2">卡阿伯</p>
+                      <p class="h5 text-gray-500 tracking-2 m-0">2020年5月22日 11:32</p>
                     </div>
                   </div>
-                  <p class="text-gray-4 tracking-1">希望有更多花色可以選擇！我女兒最近喜歡綠色</p>
+                  <p class="text-gray-800 tracking-1">希望有更多花色可以選擇！我女兒最近喜歡綠色</p>
                 </li>
-                <li class="border border-gray-5 rounded-3 p-4 mb-4">
+                <li class="border border-gray-200 rounded-3 p-4 mb-4">
                   <div class="d-flex align-items-center pb-4">
                     <img src="./images/user_img02.jpg" alt="賈師">
                     <div class="ps-4">
-                      <p class="h3 text-gray-1 tracking-2">賈師</p>
-                      <p class="h5 text-gray-3 tracking-2 m-0">2020年5月22日 11:32</p>
+                      <p class="h3 text-gray-700 tracking-2">賈師</p>
+                      <p class="h5 text-gray-500 tracking-2 m-0">2020年5月22日 11:32</p>
                     </div>
                   </div>
-                  <p class="text-gray-4 tracking-1">可以做個相簿功能嗎？拍出好看的影片再讓我們選擇要印出哪一張這樣</p>
+                  <p class="text-gray-800 tracking-1">可以做個相簿功能嗎？拍出好看的影片再讓我們選擇要印出哪一張這樣</p>
                 </li>
-                <li class="border border-gray-5 rounded-3 p-4 mb-4">
+                <li class="border border-gray-200 rounded-3 p-4 mb-4">
                   <div class="d-flex align-items-center pb-4">
                     <img src="./images/user_img02.jpg" alt="俊俊">
                     <div class="ps-4">
-                      <p class="h3 text-gray-1 tracking-2">俊俊</p>
-                      <p class="h5 text-gray-3 tracking-2 m-0">2020年5月22日 11:32</p>
+                      <p class="h3 text-gray-700 tracking-2">俊俊</p>
+                      <p class="h5 text-gray-500 tracking-2 m-0">2020年5月22日 11:32</p>
                     </div>
                   </div>
-                  <p class="text-gray-4 tracking-1">test123 看一下我是不是真的可以留言</p>
+                  <p class="text-gray-800 tracking-1">test123 看一下我是不是真的可以留言</p>
                 </li>
               </ul>
             </div>
             <!-- 表單 -->
             <img src="./images/icon_heart.svg" alt="heart" class="mx-auto pt-12">
             <div class="position-relative mb-6">
-              <span class="h3 text-gray-1 tracking-2 bg-white position-absolute start-50 translate-middle px-5">贊助專案</span>
+              <span class="h3 text-gray-700 tracking-2 bg-white position-absolute start-50 translate-middle px-5">贊助專案</span>
               <div class="progress mt-5" style="height: 3px;">
                 <div class="progress-bar bg-primary" role="progressbar" style="width: 100%"></div>
               </div>
             </div>
-            <form class="form">
+            <form id="order-form" class="form">
               <div class="form-item triangle-style">
-                <label for="project" class="form-label">贊助方案</label>
-                <select data-validate="order-submit" name="project" id="project" class="form-control text-gray-7 bg-gray-6 w-100 rounded py-2 px-4">
+                <label for="project" class="form-label text-gray-800">贊助方案</label>
+                <select data-validate="order-submit" name="project" id="project" class=" project form-control text-gray-800 bg-gray-100 w-100 rounded py-2 px-4">
                   <option value="">請選擇一個方案</option>
                   <option value="方案一">方案一</option>
                   <option value="方案二">方案二</option>
@@ -366,29 +372,29 @@
                 </div>
               </div>
               <div class="form-item">
-                <label for="name" class="form-label">收件人姓名</label>
-                <input data-validate="order-submit" type="text" class=" form-control text-gray-7 bg-gray-6 w-100 rounded py-2 px-4" id="name">
+                <label for="name" class="form-label text-gray-800">收件人姓名</label>
+                <input data-validate="order-submit" type="text" class=" form-control text-gray-800 bg-gray-100 w-100 rounded py-2 px-4" id="name">
                 <div class="invalid-feedback">
                   姓名為必填!
                 </div>
               </div>
               <div class="form-item">
-                <label class="form-label" for="submit-tel">聯絡電話</label>
-                <input type="number" class="form-control text-gray-7 bg-gray-6 w-100 rounded py-2 px-4" id="submit-tel">
+                <label class="form-label text-gray-800" for="submit-tel">聯絡電話</label>
+                <input type="number" class="form-control text-gray-800 bg-gray-100 w-100 rounded py-2 px-4" id="submit-tel">
                 <div class="invalid-feedback">
                   請填入正確號碼!
                 </div>
               </div>
               <div class="form-item">
-                <label class="form-label" for="submit-email">連絡信箱</label>
-                <input type="email" class="form-control text-gray-7 bg-gray-6 w-100 rounded py-2 px-4" id="submit-email">
+                <label class="form-label text-gray-800" for="submit-email">連絡信箱</label>
+                <input type="email" class="form-control text-gray-800 bg-gray-100 w-100 rounded py-2 px-4" id="submit-email">
                 <div class="invalid-feedback">
                   請填入正確信箱!
                 </div>
               </div>
               <div class="form-item mb-2 triangle-style">
-                <label for="payment" class="form-label">付款方式</label>
-                <select data-validate="order-submit" name="project" id="payment" class="form-control text-gray-7 bg-gray-6 w-100 rounded py-2 px-4">
+                <label for="payment" class="form-label text-gray-800">付款方式</label>
+                <select data-validate="order-submit" name="project" id="payment" class="payment form-control text-gray-800 bg-gray-100 w-100 rounded py-2 px-4">
                   <option value="">選擇付款方式</option>
                   <option value="信用卡付款">信用卡付款</option>
                   <option value="超商取貨付款">超商取貨付款</option>
@@ -398,8 +404,8 @@
                 </div>
               </div>
               <div class="text-center mb-4 mb-md-0">
-                <button id="order-submit-btn" type="submit" class="lh-1 border-0 btn btn-primary hover:btn-orange-1 py-4 px-12 rounded-pill">
-                  <span class="h3 text-gray-2 m-0 lh-1">贊助專案</span>
+                <button id="order-submit-btn" type="submit" class="lh-1 border-0 btn btn-primary hover-btn-orange-100 py-4 px-12 rounded-pill">
+                  <span class="h3 text-gray-600 m-0 lh-1">贊助專案</span>
                 </button>
               </div>
             </form>
@@ -407,89 +413,89 @@
         </div>
         <!-- sidebar -->
         <div class="sidebar col-md-4 ">
-          <div class="p-4 border border-gray-5 rounded-3">
+          <div class="p-4 border border-gray-200 rounded-3">
             <div class="d-flex align-items-center">
               <div class="store-img border border-3 border-primary rounded-pill"></div>
               <div class="p-4">
-                <h3 class="h3 text-gray-1 tracking-2 font-fa">缺錢事務所</h3>
-                <p class="m-0 text-gray-4">已發起 1 個專案</p>
+                <h3 class="h3 text-gray-700 tracking-2 font-fa">缺錢事務所</h3>
+                <p class="m-0 text-gray-800">已發起 1 個專案</p>
               </div>
             </div>
-            <p class="text-gray-4 tracking-1 py-4 m-0">需要點錢錢做些酷酷的東西，拜託各位乾爹乾媽囉！</p>
+            <p class="text-gray-800 tracking-1 py-4 m-0">需要點錢錢做些酷酷的東西，拜託各位乾爹乾媽囉！</p>
             <div class="d-flex justify-content-between">
               <div class="d-flex">
-                <a href="#" class="custom-icon d-block bg-gray-3 rounded-pill">
+                <a href="#" class="custom-icon d-block bg-gray-500 rounded-pill">
                   <i class="fab fa-facebook-f text-white"></i>
                 </a>
-                <a href="#" class="custom-icon d-block bg-gray-3 rounded-pill ms-2">
+                <a href="#" class="custom-icon d-block bg-gray-500 rounded-pill ms-2">
                   <i class="fab fa-youtube text-white"></i>
                 </a>
               </div>
-              <a href="#" class="btn btn-outline-gray-3 hover:btn-primary rounded-pill text-decoration-none px-4 py-1">
+              <a href="#" class="btn btn-outline-gray-500 hover-btn-primary rounded-pill text-decoration-none px-4 py-1">
                 <i class="far fa-comment-dots"></i>
-                <span class="ms-1 text-gray-3">聯絡我們</span>
+                <span class="ms-1 text-gray-500">聯絡我們</span>
               </a>
             </div>
           </div>
           <p class=" rounded-3 overflow-hidden mt-8">
-            <span class="h3 text-gray-1 tracking-2 bg-white-1 d-block text-center border-start border-end border-4 border-primary py-3 m-0">選擇一個方案來支持</span>
+            <span class="h3 text-gray-700 tracking-2 bg-white-100 d-block text-center border-start border-end border-4 border-primary py-3 m-0">選擇一個方案來支持</span>
           </p>
           <ul class="p-0">
-            <li class="border border-gray-8 rounded-3 mb-4">
+            <li class="border border-gray-300 rounded-3 mb-4">
               <img src="./images/plan_img.jpg" alt="plan">
               <div class="p-4">
-                <p class="h5 text-gray-2 d-flex justify-content-between pb-2 border-bottom border-gray-8">
+                <p class="h5 text-gray-600 d-flex justify-content-between pb-2 border-bottom border-gray-300">
                   <span class="tracking-2">限時優惠</span>
                   <span>2 days 20:05:20</span>
                 </p>
-                <h2 class="h3 text-gray-1 tracking-2">
-                  <a href="#" class="text-decoration-none">買一送一，只有兩百組別錯過</a>
+                <h2 class="h3 tracking-2">
+                  <a href="#" class="text-decoration-none text-gray-700">買一送一，只有兩百組別錯過</a>
                 </h2>
-                <span class="h2 text-gray-1">NT$ 1600</span>
+                <span class="h2 text-gray-700">NT$ 1600</span>
                 <p class="my-3">
-                  <span class="h6 text-gray-3 bg-gray-8 px-4 py-1 rounded">已被贊助88次</span>
-                  <span class="h6 text-white bg-gray-3 ms-2 px-4 py-1 rounded">限量<span class="text-primary">200</span>個</span>
+                  <span class="h6 text-gray-500 bg-gray-300 px-4 py-1 rounded">已被贊助88次</span>
+                  <span class="h6 text-white bg-gray-500 ms-2 px-4 py-1 rounded">限量<span class="text-primary">200</span>個</span>
                 </p>
-                <p class="text-gray-3 lh-base">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
-                <button class="btn btn-primary hover:btn-orange-1 w-100 py-3 rounded-pill lh-1"><span class="text-gray-2 tracking-1">贊助此專案</span></button>
+                <p class="text-gray-500 lh-base">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
+                <button class="btn btn-primary hover-btn-orange-100 w-100 py-3 rounded-pill lh-1"><span class="text-gray-600 tracking-1">贊助此專案</span></button>
               </div>
             </li>
-            <li class="border border-gray-8 rounded-3 mb-4">
+            <li class="border border-gray-300 rounded-3 mb-4">
               <img src="./images/plan_img.jpg" alt="plan">
               <div class="p-4">
-                <p class="h5 text-gray-2 d-flex justify-content-between pb-2 border-bottom border-gray-8">
+                <p class="h5 text-gray-600 d-flex justify-content-between pb-2 border-bottom border-gray-300">
                   <span class="tracking-2">限時優惠</span>
                   <span>2 days 20:05:20</span>
                 </p>
-                <h2 class="h3 text-gray-1 tracking-2">
-                  <a href="#" class="text-decoration-none">買一送一，只有兩百組別錯過</a>
+                <h2 class="h3 tracking-2">
+                  <a href="#" class="text-decoration-none text-gray-700">買一送一，只有兩百組別錯過</a>
                 </h2>
-                <span class="h2 text-gray-1">NT$ 1600</span>
+                <span class="h2 text-gray-700">NT$ 1600</span>
                 <p class="my-3">
-                  <span class="h6 text-gray-3 bg-gray-8 px-4 py-1 rounded">已被贊助88次</span>
-                  <span class="h6 text-white bg-gray-3 ms-2 px-4 py-1 rounded">限量<span class="text-primary">200</span>個</span>
+                  <span class="h6 text-gray-500 bg-gray-300 px-4 py-1 rounded">已被贊助88次</span>
+                  <span class="h6 text-white bg-gray-500 ms-2 px-4 py-1 rounded">限量<span class="text-primary">200</span>個</span>
                 </p>
-                <p class="text-gray-3 lh-base">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
-                <button class="btn btn-primary hover:btn-orange-1 w-100 py-3 rounded-pill lh-1"><span class="text-gray-2 tracking-1">贊助此專案</span></button>
+                <p class="text-gray-500 lh-base">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
+                <button class="btn btn-primary hover-btn-orange-100 w-100 py-3 rounded-pill lh-1"><span class="text-gray-600 tracking-1">贊助此專案</span></button>
               </div>
             </li>
-            <li class="border border-gray-8 rounded-3 mb-4">
+            <li class="border border-gray-300 rounded-3 mb-4">
               <img src="./images/plan_img.jpg" alt="plan">
               <div class="p-4">
-                <p class="h5 text-gray-2 d-flex justify-content-between pb-2 border-bottom border-gray-8">
+                <p class="h5 text-gray-600 d-flex justify-content-between pb-2 border-bottom border-gray-300">
                   <span class="tracking-2">限時優惠</span>
                   <span>2 days 20:05:20</span>
                 </p>
-                <h2 class="h3 text-gray-1 tracking-2">
-                  <a href="#" class="text-decoration-none">買一送一，只有兩百組別錯過</a>
+                <h2 class="h3 tracking-2">
+                  <a href="#" class="text-decoration-none text-gray-700">買一送一，只有兩百組別錯過</a>
                 </h2>
-                <span class="h2 text-gray-1">NT$ 1600</span>
+                <span class="h2 text-gray-700">NT$ 1600</span>
                 <p class="my-3">
-                  <span class="h6 text-gray-3 bg-gray-8 px-4 py-1 rounded">已被贊助88次</span>
-                  <span class="h6 text-white bg-gray-3 ms-2 px-4 py-1 rounded">限量<span class="text-primary">200</span>個</span>
+                  <span class="h6 text-gray-500 bg-gray-300 px-4 py-1 rounded">已被贊助88次</span>
+                  <span class="h6 text-white bg-gray-500 ms-2 px-4 py-1 rounded">限量<span class="text-primary">200</span>個</span>
                 </p>
-                <p class="text-gray-3 lh-base">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
-                <button class="btn btn-primary hover:btn-orange-1 w-100 py-3 rounded-pill lh-1"><span class="text-gray-2 tracking-1">贊助此專案</span></button>
+                <p class="text-gray-500 lh-base">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
+                <button class="btn btn-primary hover-btn-orange-100 w-100 py-3 rounded-pill lh-1"><span class="text-gray-600 tracking-1">贊助此專案</span></button>
               </div>
             </li>
           </ul>
@@ -501,36 +507,36 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title h2 text-gray-4">登入</h5>
+            <h5 class="modal-title h2 text-gray-800">登入</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <form id="login-form">
               <div class="mb-3">
-                <label for="login-email" class="form-label">帳號</label>
-                <input data-validate="login" type="email" class="form-control bg-gray-6" id="login-email">
+                <label for="login-email" class="form-label text-gray-800">帳號</label>
+                <input data-validate="login" type="email" class="form-control bg-gray-100" id="login-email">
                 <div class="invalid-feedback">
                   請填寫正確的信箱!
                 </div>  
               </div>
               <div class="mb-3">
-                <label for="login-password" class="form-label">密碼</label>
-                <input data-validate="login" type="password" class="form-control bg-gray-6" id="login-password">
+                <label for="login-password" class="form-label text-gray-800">密碼</label>
+                <input data-validate="login" type="password" class="form-control bg-gray-100" id="login-password">
                 <div class="invalid-feedback">
                   請檢查密碼!
                 </div>
               </div>
-              <a href="#" class="h5 text-gray-3 text-decoration-none">忘記密碼？</a>
+              <a href="#" class="h5 text-gray-500 text-decoration-none">忘記密碼？</a>
               <button id="login" type="submit" class="btn btn-primary rounded-pill w-100 py-4 mt-4">
-                <span class="h3 text-gray-2">登入</span>
+                <span class="h3 text-gray-600">登入</span>
               </button>
             </form>
             <div class="position-relative pb-8">
               <div class="progress mt-14">
-                <div class="progress-bar bg-gray-8" role="progressbar" style="width: 100%"></div>
+                <div class="progress-bar bg-gray-300" role="progressbar" style="width: 100%"></div>
               </div>
               <p class="h5 bg-white text-nowrap position-absolute start-50 top-25 translate-middle px-3 m-0">還沒有帳號？ 
-                <a href="#" class="text-orange-1 text-decoration-none">註冊一個帳號</a>
+                <a href="#" class="text-orange-100 text-decoration-none">註冊一個帳號</a>
               </p>
             </div>
           </div>
@@ -539,7 +545,7 @@
     </div>
   </main>
   <!-- footer -->
-  <footer class="text-center py-8 bg-gray-1">
+  <footer class="text-center py-8 bg-gray-700">
     <p class="text-white m-0">Copyright &copy; 拼拼 All rights reserved.</p>
   </footer>
   

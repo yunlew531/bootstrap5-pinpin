@@ -7,17 +7,22 @@
 
 // scss-docs-start gray-color-variables
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 // scss-docs-end gray-color-variables
+
+// custom-color
+$primary: #FFDF65;
+$gray-100: #F7F7F7;
+$gray-200: #E5E5E5;
+$gray-300: #E8E8DB;
+$gray-400: #999999;
+$gray-500: #858377;
+$gray-600: #636057;
+$gray-700: #494846;
+$gray-800: #373A3C;
+$orange-100: #FF785E;
+$white-100: #F8F9FA;
 
 // fusv-disable
 // scss-docs-start gray-colors-map
@@ -78,18 +83,7 @@ $dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
 
 // custom-variables
-$primary: #FFDF65;
-$gray-1: #494846;
-$gray-2: #636057;
-$gray-3: #858377;
-$gray-4: #373A3C;
-$gray-5: #E5E5E5;
-$gray-6: #F7F7F7;
-$gray-7: #999999;
-$gray-8: #E8E8DB;
-$orange-1: #FF785E;
-$white-1: #F8F9FA;
-$white-2: #FEFEFE;
+
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
@@ -100,19 +94,18 @@ $theme-colors: (
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark,
-  // custom-variables
+  // custom-color
   "primary":    $primary,
-  "gray-1":     $gray-1,
-  "gray-2":     $gray-2,
-  "gray-3":     $gray-3,
-  "gray-4":     $gray-4,
-  "gray-5":     $gray-5,
-  "gray-6":     $gray-6,
-  "gray-7":     $gray-7,
-  "gray-8":     $gray-8,
-  "orange-1":   $orange-1,
-  "white-1":    $white-1,
-  "white-2":    $white-2,
+  "orange-100":   $orange-100,
+  "white-100":    $white-100,
+  'gray-100':   $gray-100,
+  'gray-200':   $gray-200,
+  'gray-300':   $gray-300,
+  'gray-400':   $gray-400,
+  'gray-500':   $gray-500,
+  'gray-600':   $gray-600,
+  'gray-700':   $gray-700,
+  'gray-800':   $gray-800,
 ) !default;
 
 // scss-docs-end theme-colors-map
@@ -709,7 +702,7 @@ $form-text-margin-top:                  .25rem !default;
 $form-text-font-size:                   $small-font-size !default;
 $form-text-font-style:                  null !default;
 $form-text-font-weight:                 null !default;
-$form-text-color:                       $gray-7 !default;
+$form-text-color:                       $gray-400 !default;
 // scss-docs-end form-text-variables
 
 // scss-docs-start form-label-variables
@@ -962,7 +955,7 @@ $nav-link-padding-y:                .5rem !default;
 $nav-link-padding-x:                1rem !default;
 $nav-link-font-size:                null !default;
 $nav-link-font-weight:              null !default;
-$nav-link-color:                    $gray-2 !default;
+$nav-link-color:                    $gray-600 !default;
 $nav-link-hover-color:              $link-hover-color !default;
 $nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
 $nav-link-disabled-color:           $gray-600 !default;
@@ -971,7 +964,7 @@ $nav-tabs-border-color:             $gray-300 !default;
 $nav-tabs-border-width:             $border-width !default;
 $nav-tabs-border-radius:            $border-radius !default;
 $nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $nav-tabs-border-color !default;
-$nav-tabs-link-active-color:        $gray-2 !default;
+$nav-tabs-link-active-color:        $gray-600 !default;
 $nav-tabs-link-active-bg:           $body-bg !default;
 $nav-tabs-link-active-border-color: $primary $primary $nav-tabs-link-active-bg !default;
 
