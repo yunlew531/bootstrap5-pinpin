@@ -1326,10 +1326,6 @@ ul {
   position: fixed !important;
 }
 
-.bottom-0 {
-  bottom: 0 !important;
-}
-
 .start-50 {
   left: 50% !important;
 }
@@ -1714,10 +1710,6 @@ ul {
   border-radius: 50rem !important;
 }
 
-.opacity-0 {
-  opacity: 0 !important;
-}
-
 .z-10 {
   z-index: 10 !important;
 }
@@ -1774,11 +1766,16 @@ body {
 .sponsor-btn {
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
+  bottom: 0;
+}
+
+.sponsor-btn.hide {
+  bottom: -50px;
 }
 
 @media (min-width: 768px) {
   .sponsor-btn {
-    opacity: 0;
+    display: none;
   }
 }
 

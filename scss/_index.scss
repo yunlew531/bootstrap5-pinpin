@@ -4,11 +4,15 @@ body {
 
 .sponsor-btn {
   transition: 0.2s ease-in;
+  bottom: 0;
+  &.hide {
+    bottom: -50px;
+  }
 }
 
 @include media-breakpoint-up(md) {
   .sponsor-btn {
-    opacity: 0;
+    display: none;
   }
 }
 

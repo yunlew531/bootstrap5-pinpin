@@ -10,7 +10,7 @@ const submitEmailInput = document.querySelector('#submit-email');
 const submitTelInput = document.querySelector('#submit-tel');
 const sponsorBtn = document.querySelector('.sponsor-btn');
 
-
+// bootstrap tooltip
 const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
 const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
@@ -22,10 +22,10 @@ orderSubmitBtn.addEventListener('click', submitOrder);
 window.addEventListener('scroll', hideSponsorBtn);
 
 function hideSponsorBtn() {
-  if (window.scrollY >= 2100 && window.scrollY <=3050) {
-    sponsorBtn.classList.add('opacity-0');
+  if (window.scrollY >= 2100 && window.scrollY <=3000) {
+    sponsorBtn.classList.add('hide');
   } else {
-    sponsorBtn.classList.remove('opacity-0');
+    sponsorBtn.classList.remove('hide');
   }
 }
 
